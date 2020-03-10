@@ -3,11 +3,12 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Mar 08, 2020 at 10:11 PM
+-- Generation Time: Mar 10, 2020 at 08:34 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
+
 --
--- Database: `CampamentoVerano`
+-- Database: `CampVerano`
 --
 
 -- --------------------------------------------------------
@@ -18,11 +19,11 @@
 
 CREATE TABLE `tableCiudad` (
   `_idCiudad` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `Nombre_Ciudad` varchar(200),
-  `Nombre_Sector` varchar(200),
-  `Desc_Ciudad` varchar(200),
-  `Pobla_Ciudad` varchar(200)  
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `Nombre_Ciudad` varchar(200) DEFAULT NULL,
+  `Nombre_Sector` varchar(200) DEFAULT NULL,
+  `Desc_Ciudad` varchar(200) DEFAULT NULL,
+  `Pobla_Ciudad` varchar(200) DEFAULT NULL
+);
 
 -- --------------------------------------------------------
 
@@ -32,11 +33,11 @@ CREATE TABLE `tableCiudad` (
 
 CREATE TABLE `tableNinio` (
   `_idNinio` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `Nombre` varchar(200),
-  `Apellido` varchar(200),
-  `sexo` varchar(200),
-  `Fech_Nac` date  
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `Nombre` varchar(200) DEFAULT NULL,
+  `Apellido` varchar(200) DEFAULT NULL,
+  `sexo` varchar(200) DEFAULT NULL,
+  `Fech_Nac` date DEFAULT NULL
+);
 
 -- --------------------------------------------------------
 
@@ -46,11 +47,11 @@ CREATE TABLE `tableNinio` (
 
 CREATE TABLE `tablePadres` (
   `_idPadres` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `Nombre` varchar(200),
-  `Apellido` varchar(200),
-  `Sexo` varchar(200),
-  `Fech_Naci` varchar(200)  
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `Nombre` varchar(200) DEFAULT NULL,
+  `Apellido` varchar(200) DEFAULT NULL,
+  `Sexo` varchar(200) DEFAULT NULL,
+  `Fech_Naci` varchar(200) DEFAULT NULL
+);
 
 -- --------------------------------------------------------
 
@@ -59,12 +60,12 @@ CREATE TABLE `tablePadres` (
 --
 
 CREATE TABLE `tablePais` (
-  `_idPais`int(10) PRIMARY KEY AUTO_INCREMENT,
-  `Nombre_Pais` varchar(200),
-  `Nombre_Ciudad` varchar(200),
-  `Desc_Pais` varchar(200),
-  `Pobla_Pais` varchar(200)  
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `_idPais` int(10) PRIMARY KEY AUTO_INCREMENT,
+  `Nombre_Pais` varchar(200) DEFAULT NULL,
+  `Nombre_Ciudad` varchar(200) DEFAULT NULL,
+  `Desc_Pais` varchar(200) DEFAULT NULL,
+  `Pobla_Pais` varchar(200) DEFAULT NULL
+);
 
 -- --------------------------------------------------------
 
@@ -74,11 +75,11 @@ CREATE TABLE `tablePais` (
 
 CREATE TABLE `tablePersona` (
   `_id` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `cantidad_Ninio` varchar(200),
-  `cantida_Profesor` varchar(200),
-  `phones` varchar(200),
-  `dates` date  
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `cantidad_Ninio` varchar(200) DEFAULT NULL,
+  `cantida_Profesor` varchar(200) DEFAULT NULL,
+  `phones` varchar(200) DEFAULT NULL,
+  `dates` date DEFAULT NULL
+);
 
 -- --------------------------------------------------------
 
@@ -88,11 +89,11 @@ CREATE TABLE `tablePersona` (
 
 CREATE TABLE `tableSector` (
   `_idSector` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `Nombre_Sector` varchar(200),
-  `Estatuas` varchar(200),
-  `Desc_Sector` varchar(200),
-  `Zona` varchar(200)  
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `Nombre_Sector` varchar(200) DEFAULT NULL,
+  `Num_Plaza` varchar(200) DEFAULT NULL,
+  `Direccion` varchar(200) DEFAULT NULL,
+  `Zona` varchar(200) DEFAULT NULL
+);
 
 -- --------------------------------------------------------
 
@@ -102,8 +103,8 @@ CREATE TABLE `tableSector` (
 
 CREATE TABLE `tableTipo_Phones` (
   `_idPhone` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `Celular` varchar(200),
-  `Trabajo` varchar(200),
-  `Residencial` varchar(200),
-  `Publico` varchar(200)  
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `Celular` varchar(200) DEFAULT NULL,
+  `Trabajo` varchar(200) DEFAULT NULL,
+  `Residencial` varchar(200) DEFAULT NULL,
+  `Publico` varchar(200) DEFAULT NULL
+);
