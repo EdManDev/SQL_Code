@@ -19,10 +19,10 @@
 
 CREATE TABLE `tableCiudad` (
   `_idCiudad` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `Nombre_Ciudad` varchar(200) DEFAULT NULL,
-  `Nombre_Sector` varchar(200) DEFAULT NULL,
-  `Desc_Ciudad` varchar(200) DEFAULT NULL,
-  `Pobla_Ciudad` varchar(200) DEFAULT NULL
+  `nombre_Ciudad` varchar(200) DEFAULT NULL,
+  `nombre_Sector` varchar(200) DEFAULT NULL,
+  `desc_Ciudad` varchar(200) DEFAULT NULL,
+  `pobla_Ciudad` varchar(200) DEFAULT NULL
 );
 
 -- --------------------------------------------------------
@@ -33,10 +33,10 @@ CREATE TABLE `tableCiudad` (
 
 CREATE TABLE `tableNinio` (
   `_idNinio` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `Nombre` varchar(200) DEFAULT NULL,
-  `Apellido` varchar(200) DEFAULT NULL,
+  `nombre` varchar(200) DEFAULT NULL,
+  `apellido` varchar(200) DEFAULT NULL,
   `sexo` varchar(200) DEFAULT NULL,
-  `Fech_Nac` date DEFAULT NULL
+  `fech_Nac` date DEFAULT NULL
 );
 
 -- --------------------------------------------------------
@@ -47,10 +47,10 @@ CREATE TABLE `tableNinio` (
 
 CREATE TABLE `tablePadres` (
   `_idPadres` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `Nombre` varchar(200) DEFAULT NULL,
-  `Apellido` varchar(200) DEFAULT NULL,
-  `Sexo` varchar(200) DEFAULT NULL,
-  `Fech_Naci` varchar(200) DEFAULT NULL
+  `nombre` varchar(200) DEFAULT NULL,
+  `apellido` varchar(200) DEFAULT NULL,
+  `sexo` varchar(200) DEFAULT NULL,
+  `fech_Naci` varchar(200) DEFAULT NULL
 );
 
 -- --------------------------------------------------------
@@ -61,10 +61,10 @@ CREATE TABLE `tablePadres` (
 
 CREATE TABLE `tablePais` (
   `_idPais` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `Nombre_Pais` varchar(200) DEFAULT NULL,
-  `Nombre_Ciudad` varchar(200) DEFAULT NULL,
-  `Desc_Pais` varchar(200) DEFAULT NULL,
-  `Pobla_Pais` varchar(200) DEFAULT NULL
+  `nombre_Pais` varchar(200) DEFAULT NULL,
+  `nombre_Ciudad` varchar(200) DEFAULT NULL,
+  `desc_Pais` varchar(200) DEFAULT NULL,
+  `pobla_Pais` varchar(200) DEFAULT NULL
 );
 
 -- --------------------------------------------------------
@@ -89,10 +89,10 @@ CREATE TABLE `tablePersona` (
 
 CREATE TABLE `tableSector` (
   `_idSector` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `Nombre_Sector` varchar(200) DEFAULT NULL,
-  `Num_Plaza` varchar(200) DEFAULT NULL,
-  `Direccion` varchar(200) DEFAULT NULL,
-  `Zona` varchar(200) DEFAULT NULL
+  `nombre_Sector` varchar(200) DEFAULT NULL,
+  `num_Plaza` varchar(200) DEFAULT NULL,
+  `direccion` varchar(200) DEFAULT NULL,
+  `zona` varchar(200) DEFAULT NULL
 );
 
 -- --------------------------------------------------------
@@ -103,8 +103,8 @@ CREATE TABLE `tableSector` (
 
 CREATE TABLE `tableTipo_Phones` (
   `_idPhone` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `Celular` varchar(200) DEFAULT NULL,
-  `Trabajo` varchar(200) DEFAULT NULL,
-  `Residencial` varchar(200) DEFAULT NULL,
-  `Publico` varchar(200) DEFAULT NULL
+  `celular` varchar(200) DEFAULT NULL,
+  `trabajo` varchar(200) DEFAULT NULL,
+  `residencial` varchar(200) DEFAULT NULL,
+  `publico` varchar(200) DEFAULT NULL
 );
