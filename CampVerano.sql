@@ -1,11 +1,14 @@
 -- phpMyAdmin SQL Dump
 -- version 4.9.3
 -- https://www.phpmyadmin.net/
---
+
 -- Host: localhost:8889
--- Generation Time: Mar 10, 2020 at 08:34 PM
+-- Generation Time: Mar 11, 2020 at 09:02 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
 --
 -- Database: `CampVerano`
@@ -19,11 +22,11 @@
 
 CREATE TABLE `tableCiudad` (
   `_idCiudad` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `nombre_Ciudad` varchar(200) DEFAULT NULL,
-  `nombre_Sector` varchar(200) DEFAULT NULL,
-  `desc_Ciudad` varchar(200) DEFAULT NULL,
-  `pobla_Ciudad` varchar(200) DEFAULT NULL
-);
+  `nombre_Ciudad` varchar(200),
+  `nombre_Sector` varchar(200),
+  `desc_Ciudad` varchar(200),
+  `pobla_Ciudad` varchar(200)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -33,11 +36,11 @@ CREATE TABLE `tableCiudad` (
 
 CREATE TABLE `tableNinio` (
   `_idNinio` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `nombre` varchar(200) DEFAULT NULL,
-  `apellido` varchar(200) DEFAULT NULL,
-  `sexo` varchar(200) DEFAULT NULL,
-  `fech_Nac` date DEFAULT NULL
-);
+  `nombre` varchar(200),
+  `apellido` varchar(200),
+  `sexo` varchar(200),
+  `fech_Nac` date
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -47,11 +50,11 @@ CREATE TABLE `tableNinio` (
 
 CREATE TABLE `tablePadres` (
   `_idPadres` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `nombre` varchar(200) DEFAULT NULL,
-  `apellido` varchar(200) DEFAULT NULL,
-  `sexo` varchar(200) DEFAULT NULL,
-  `fech_Naci` varchar(200) DEFAULT NULL
-);
+  `nombre` varchar(200),
+  `apellido` varchar(200),
+  `sexo` varchar(200),
+  `fech_Naci` varchar(200)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -61,11 +64,11 @@ CREATE TABLE `tablePadres` (
 
 CREATE TABLE `tablePais` (
   `_idPais` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `nombre_Pais` varchar(200) DEFAULT NULL,
-  `nombre_Ciudad` varchar(200) DEFAULT NULL,
-  `desc_Pais` varchar(200) DEFAULT NULL,
-  `pobla_Pais` varchar(200) DEFAULT NULL
-);
+  `nombre_Pais` varchar(200),
+  `nombre_Ciudad` varchar(200),
+  `desc_Pais` varchar(200),
+  `pobla_Pais` varchar(200)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -75,11 +78,25 @@ CREATE TABLE `tablePais` (
 
 CREATE TABLE `tablePersona` (
   `_id` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `cantidad_Ninio` varchar(200) DEFAULT NULL,
-  `cantida_Profesor` varchar(200) DEFAULT NULL,
-  `phones` varchar(200) DEFAULT NULL,
-  `dates` date DEFAULT NULL
-);
+  `cantidad_Ninio` varchar(200),
+  `cantida_Profesor` varchar(200),
+  `phones` varchar(200),
+  `dates` date
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tablePhoneClient`
+--
+
+CREATE TABLE `tablePhoneClient` (
+  `_idCli` int(10) ,
+  `_idTipo_Phones` int(10),
+  `NUMERO` int(50),
+  `REGISTRO` int(10) PRIMARY KEY AUTO_INCREMENT,
+  `phoneClient` int(10)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -89,11 +106,11 @@ CREATE TABLE `tablePersona` (
 
 CREATE TABLE `tableSector` (
   `_idSector` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `nombre_Sector` varchar(200) DEFAULT NULL,
-  `num_Plaza` varchar(200) DEFAULT NULL,
-  `direccion` varchar(200) DEFAULT NULL,
-  `zona` varchar(200) DEFAULT NULL
-);
+  `nombre_Sector` varchar(200),
+  `num_Plaza` varchar(200),
+  `direccion` varchar(200),
+  `zona` varchar(200)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -102,9 +119,10 @@ CREATE TABLE `tableSector` (
 --
 
 CREATE TABLE `tableTipo_Phones` (
-  `_idPhone` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `celular` varchar(200) DEFAULT NULL,
-  `trabajo` varchar(200) DEFAULT NULL,
-  `residencial` varchar(200) DEFAULT NULL,
-  `publico` varchar(200) DEFAULT NULL
-);
+  `_idPhone`int(10) PRIMARY KEY AUTO_INCREMENT,
+  `celular` varchar(200),
+  `trabajo` varchar(200),
+  `residencial` varchar(200),
+  `publico` varchar(200)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
