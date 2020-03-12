@@ -26,7 +26,7 @@ CREATE TABLE `tableCiudad` (
   `nombre_Sector` varchar(200),
   `desc_Ciudad` varchar(200),
   `pobla_Ciudad` varchar(200)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+)CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -40,7 +40,7 @@ CREATE TABLE `tableNinio` (
   `apellido` varchar(200),
   `sexo` varchar(200),
   `fech_Nac` date
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+)CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -54,7 +54,7 @@ CREATE TABLE `tablePadres` (
   `apellido` varchar(200),
   `sexo` varchar(200),
   `fech_Naci` varchar(200)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+)CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -68,7 +68,22 @@ CREATE TABLE `tablePais` (
   `nombre_Ciudad` varchar(200),
   `desc_Pais` varchar(200),
   `pobla_Pais` varchar(200)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+)CHARSET=utf8;
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tablePais`
+--
+
+CREATE TABLE `tableCamp` (
+  `_idCamp` int(10),
+  `nombre_Camp` varchar(200),
+  `desc_Camp` varchar(200),
+  `REGISTRO` int(10) PRIMARY KEY AUTO_INCREMENT,
+  `dates_Camp` varchar(200)
+)CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -82,7 +97,7 @@ CREATE TABLE `tablePersona` (
   `cantida_Profesor` varchar(200),
   `phones` varchar(200),
   `dates` date
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+)CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -96,7 +111,7 @@ CREATE TABLE `tablePhoneClient` (
   `NUMERO` int(50),
   `REGISTRO` int(10) PRIMARY KEY AUTO_INCREMENT,
   `phoneClient` int(10)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+)CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -110,7 +125,7 @@ CREATE TABLE `tableSector` (
   `num_Plaza` varchar(200),
   `direccion` varchar(200),
   `zona` varchar(200)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+)CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -124,5 +139,5 @@ CREATE TABLE `tableTipo_Phones` (
   `trabajo` varchar(200),
   `residencial` varchar(200),
   `publico` varchar(200)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+)CHARSET=utf8;
 
