@@ -93,8 +93,8 @@ CREATE TABLE `tableCamp` (
 
 CREATE TABLE `tablePersona` (
   `_idPer` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `cantidad_Ninio` varchar(200),
-  `cantida_Profesor` varchar(200),
+  `cant_Ninio` varchar(200),
+  `cant_Profesor` varchar(200),
   `tel` varchar(200),
   `dates` date
 )CHARSET=utf8;
