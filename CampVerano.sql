@@ -92,25 +92,40 @@ CREATE TABLE `tableCamp` (
 --
 
 CREATE TABLE `tablePersona` (
-  `_id` int(10) PRIMARY KEY AUTO_INCREMENT,
+  `_idPer` int(10) PRIMARY KEY AUTO_INCREMENT,
   `cantidad_Ninio` varchar(200),
   `cantida_Profesor` varchar(200),
-  `phones` varchar(200),
+  `tel` varchar(200),
   `dates` date
 )CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tablePhoneClient`
+-- Table structure for table `tableTelCli`
 --
 
-CREATE TABLE `tablePhoneClient` (
+CREATE TABLE `tableTel_Cli` (
   `_idCli` int(10) ,
-  `_idTipo_Phones` int(10),
+  `_idTipo_Tel` int(10),
   `NUMERO` int(50),
   `REGISTRO` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `phoneClient` int(10)
+  `telCli` int(10)
+)CHARSET=utf8;
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tableTipo_Tels`
+--
+
+CREATE TABLE `tableTipo_Tel` (
+  `_idTel`int(10) PRIMARY KEY AUTO_INCREMENT,
+  `celular` varchar(200),
+  `trabajo` varchar(200),
+  `residencial` varchar(200),
+  `publico` varchar(200)
 )CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -121,23 +136,11 @@ CREATE TABLE `tablePhoneClient` (
 
 CREATE TABLE `tableSector` (
   `_idSector` int(10) PRIMARY KEY AUTO_INCREMENT,
-  `nombre_Sector` varchar(200),
+  `tipo_Sangre` varchar(200),
   `num_Plaza` varchar(200),
   `direccion` varchar(200),
   `zona` varchar(200)
 )CHARSET=utf8;
 
--- --------------------------------------------------------
 
---
--- Table structure for table `tableTipo_Phones`
---
-
-CREATE TABLE `tableTipo_Phones` (
-  `_idPhone`int(10) PRIMARY KEY AUTO_INCREMENT,
-  `celular` varchar(200),
-  `trabajo` varchar(200),
-  `residencial` varchar(200),
-  `publico` varchar(200)
-)CHARSET=utf8;
 
