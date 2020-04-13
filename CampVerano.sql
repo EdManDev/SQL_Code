@@ -190,3 +190,115 @@ CREATE TABLE `tableOperacionesPubNiv2` (
   `ap_oppub2` int(10),
   `fech_oppub2` int(10) 
 ) CHARSET=utf8;
+
+CREATE TABLE `tablePublico` (
+  `_idPub` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `cod_pub` int(10) ,
+  `nom_oppub` int(50) ,
+  `ap_oppub` int(10),
+  `fech_oppub` int(10) 
+) CHARSET=utf8;
+
+CREATE TABLE `tablePublicoNuevo` (
+  `_idPub1` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `cod_pub1` int(10) ,
+  `nom_oppub1` int(50) ,
+  `ap_oppub1` int(10),
+  `fech_oppub1` int(10) 
+) CHARSET=utf8;
+
+CREATE TABLE `tablePucom` (
+  `_idPub2` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `cod_pub3` int(10) ,
+  `nom_oppub2` int(50) ,
+  `ap_oppub2` int(10),
+  `fech_oppub2` int(10) 
+) CHARSET=utf8;
+
+CREATE TABLE `tableMaca` (
+  `_idPub2` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `cod_pub3` int(10) ,
+  `nom_oppub2` int(50) ,
+  `ap_oppub2` int(10),
+  `fech_oppub2` int(10) 
+) CHARSET=utf8;
+
+CREATE TABLE `tablekkkd` (
+  `_idPub2` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `cod_pub3` int(10) ,
+  `nom_oppub2` int(50) ,
+  `ap_oppub2` int(10),
+  `fech_oppub2` int(10) 
+) CHARSET=utf8;
+
+CREATE TABLE `tablePkjn` (
+  `_idPub2` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `cod_pub3` int(10) ,
+  `nom_oppub2` int(50) ,
+  `ap_oppub2` int(10),
+  `fech_oppub2` int(10) 
+) CHARSET=utf8;
+
+CREATE TABLE `tableSub` (
+  `_idPub2` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `cod_pub3` int(10) ,
+  `nom_oppub2` int(50) ,
+  `ap_oppub2` int(10),
+  `fech_oppub2` int(10) 
+) CHARSET=utf8;
+
+CREATE TABLE `tableTecla` (
+  `_idPub2` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `cod_pub3` int(10) ,
+  `nom_oppub2` int(50) ,
+  `ap_oppub2` int(10),
+  `fech_oppub2` int(10) 
+) CHARSET=utf8;
+
+CREATE TABLE `tablePam` (
+  `_idPub2` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `cod_pub3` int(10) ,
+  `nom_oppub2` int(50) ,
+  `ap_oppub2` int(10),
+  `fech_oppub2` int(10) 
+) CHARSET=utf8;
+
+CREATE TABLE `tableSolo` (
+  `_idPub2` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `cod_pub3` int(10) ,
+  `nom_oppub2` int(50) ,
+  `ap_oppub2` int(10),
+  `fech_oppub2` int(10) 
+) CHARSET=utf8;
+
+CREATE TABLE `tablecam` (
+  `_idcam` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `cod_cam` int(10) ,
+  `nom_cam` int(50) ,
+  `ap_cam` int(10),
+  `fech_cam` int(10) 
+) CHARSET=utf8;
+
+CREATE TABLE `tablePI` (
+  `_idPi` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `cod_pi` int(10) ,
+  `nom_pi` int(50) ,
+  `ap_pi` int(10),
+  `fech_pi` int(10) 
+) CHARSET=utf8;
+
+CREATE TABLE `tableRotacion` (
+  `_idrot` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `cod_rot` int(10) ,
+  `nom_rot` int(50) ,
+  `ap_rot` int(10),
+  `fech_rot` int(10) 
+) CHARSET=utf8;
+
+CREATE TABLE `tablePublicoPo` (
+  `_idpo` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `cod_po` int(10) ,
+  `nom_po` int(50) ,
+  `ap_po` int(10),
+  `fech_po` int(10) 
+) CHARSET=utf8;
