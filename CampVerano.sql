@@ -117,7 +117,7 @@ CREATE TABLE `tableTel_Cli` (
 -- Table structure for table `tableTel_Cli`
 --
 
-CREATE TABLE `tableEmpleado` (
+CREATE TABLE `tableEmpleadoOld` (
   `_idemp` int(10) PRIMARY KEY  AUTO_INCREMENT,
   `cod_empl` int(10) ,
   `nom_empl` int(50) ,
@@ -287,18 +287,15 @@ CREATE TABLE `tablePI` (
   `fech_pi` int(10) 
 ) CHARSET=utf8;
 
-CREATE TABLE `tableRotacion` (
-  `_idrot` int(10) PRIMARY KEY  AUTO_INCREMENT,
-  `cod_rot` int(10) ,
-  `nom_rot` int(50) ,
-  `ap_rot` int(10),
-  `fech_rot` int(10) 
+CREATE TABLE `tableEmpleado_Cop` (
+  `_idEmpleado` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `nom_emp` varchar(100) ,
+  `ap_emp` varchar(100) ,
+  `date_mod` datetime 
 ) CHARSET=utf8;
 
-CREATE TABLE `tablePublicoPo` (
-  `_idpo` int(10) PRIMARY KEY  AUTO_INCREMENT,
-  `cod_po` int(10) ,
-  `nom_po` int(50) ,
-  `ap_po` int(10),
-  `fech_po` int(10) 
+CREATE TABLE `tableEmpleado` (
+  `_idEmpleado` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `nom_emp` varchar(100) ,
+  `ap_emp` varchar(100) 
 ) CHARSET=utf8;
