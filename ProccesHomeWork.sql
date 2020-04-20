@@ -12,14 +12,14 @@
     email varchar(100));
 
 -- 4-) Insertar Datos en la Tabla
-  INSERT INTO edmanTable( username, email)
+  INSERT INTO edmanTable ( username, email)
   VALUES(“edmanuser”, “edmanuser@example.com”);
 
--- 5-) Diferentes Manera de Selectionar datos en la tabla
+-- 5-) Diferentes Manera de Ver Los datos en la tabla
   SELECT * FROM edmanTable;
-        SELECT * FROM edmanTable WHERE username=”edmanuser2”;
+  SELECT * FROM edmanTable WHERE username=”edmanuser2”;
 
--- 6-) Diferentes Manera de Selectionar datos en la tabla
+-- 6-) Diferentes Manera de Ver Los datos en la tabla con ORDER BY
   SELECT * FROM edmanTable ORDER BY username;
   SELECT * FROM edmanTable ORDER BY username,email;
 
@@ -34,10 +34,10 @@
   UPDATE edmanTable SET username=”newuser” WHERE id=2
 
 -- 9-) Eliminar las tabla
-  DELETE FROM edmanTable;
+  DELETE TABLE edmanTable;
 
 -- 10-) Eliminar las Bases de Datos
-DROP DATABASE edmanDB;
+  DROP DATABASE edmanDB;
 
 
 
@@ -62,22 +62,29 @@ DELETE edmanView;
 
 ---------------------------------------------------------------------------------------------
 -- LOS TRIGGER en SQL
-
 -- !!!  HAY QUE CREAR DOS TABLAS ANTES DE CREAR  EL TRIGGER !!! 
 
--- 0 Crear una tabla (1)
-  CREATE TABLE edmanTable (
-    nombre varchar(100),
-    cod_edman varchar(100));
+-- 1-) Crear una tabla (1)
+  CREATE TABLE empleado (
+    cod_edman int(50) PRIMARY KEY AUTO_INCREMENT, 
+    nom_emp varchar(100),
+    ape_emp varchar(100));
 
--- 0 Crear una tabla (2)
-  CREATE TABLE edmanTableCop (
-    nombre varchar(100),
-    cod_edman varchar(100),
-    fecha varchar(100));
+-- 2-) Crear una tabla (2)
+  CREATE TABLE empleado_cop (
+    cod_edman2 int(50) PRIMARY KEY AUTO_INCREMENT,  
+    nom_emp2 varchar(100),
+    ape_emp2 varchar(100),
+    fechas_am date);
 
--- 1 Crear el Triger
-CREATE TRIGGER edmanTrigger AFTER INSERT ON edmanTable 
-  > FOR EACH ROW 
-  > INSERT INTO  
-  > edmanTableCop(cod_edman, nombre, fecha) VALUE (new.cod_edman, new.nombre, now());
+-- 3-) Crear el Triger
+  CREATE TRIGGER nuevo_empleado AFTER INSERT ON empleado 
+    FOR EACH ROW 
+    INSERT INTO  
+    empleado_cop (cod_edman2, nom_emp2, ape_emp2, fechas_am) VALUE (new.cod_edman, new.nom_emp, new.ape_emp, now());
+
+-- 4-) INSERT dentro la tabla "empleado"
+  INSERT INTO empleado (cod_edman, nom_emp, ape_emp)VALUES("edman", "manigat");
+
+-- 4-) INSERT dentro la tabla "empleado"
+  SELECT * FROM empleado;
