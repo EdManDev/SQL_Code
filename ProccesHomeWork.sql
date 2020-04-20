@@ -42,7 +42,7 @@ DROP DATABASE edmanDB;
 
 
 ---------------------------------------------------------------------------------------------
--- LOS BIEW en SQL
+-- LOS VIEW en SQL
 
 -- 1 Crear dos tabla
 CREATE TABLE edmanTable (cantidad INT, precio INT);
