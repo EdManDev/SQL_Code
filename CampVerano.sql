@@ -7,10 +7,7 @@
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
---
+-- CREATE DATABASE CampVerano;
 -- Database: `CampVerano`
 --
 
@@ -175,21 +172,27 @@ CREATE TABLE `tableEmpleadoNorm2` (
 ) CHARSET=utf8;
 
 
-CREATE TABLE `tableOperacionesNiv1` (
-  `_idop` int(10) PRIMARY KEY  AUTO_INCREMENT,
-  `cod_op2` int(10) ,
-  `nom_op2` int(50) ,
-  `ap_op22` int(10),
-  `fech_op2` int(10) 
+CREATE TABLE `tableArticulo` (
+  `id_art` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `des_art` varchar(100) ,
+  `costo` float(12.2) ,
+  `pre_ven` float(12.2),
+  `cantidad` float(12.2),
+  `reorden` float(12.2) 
 ) CHARSET=utf8;
 
-CREATE TABLE `tableOperacionesPubNiv2` (
-  `_idop` int(10) PRIMARY KEY  AUTO_INCREMENT,
-  `cod_pub2` int(10) ,
-  `nom_oppub2` int(50) ,
-  `ap_oppub2` int(10),
-  `fech_oppub2` int(10) 
+CREATE TABLE `tableConsulta` (
+  `idfac` int(10) PRIMARY KEY  AUTO_INCREMENT,
+  `id_art` varchar(100),
+  `cantidad` float(12.2),
+  `pre_ven` float(12.2) 
 ) CHARSET=utf8;
+
+-- INSERT INTO tableArticulo (des_art, costo, pre_ven, cantidad, reorden) VALUE ("FUNDA DE ESPAGETTI", "50.00", "80.00", "200.00", "30.00");
+
+-- INSERT INTO tableArticulo (des_art, costo, pre_ven, cantidad, reorden) VALUE ("SALAMI INDUVECA", "75.00", "100", "30.40", "5.00");
+
+-- INSERT INTO tableArticulo (des_art, costo, pre_ven, cantidad, reorden) VALUE ("SACO DE AROZ", "100.00", "2300.00", "200.00", "50.00");
 
 CREATE TABLE `tablePublico` (
   `_idPub` int(10) PRIMARY KEY  AUTO_INCREMENT,
