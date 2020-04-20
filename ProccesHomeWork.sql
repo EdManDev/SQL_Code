@@ -12,8 +12,7 @@
     email varchar(100));
 
 -- 4-) Insertar Datos en la Tabla
-  INSERT INTO edmanTable ( username, email)
-  VALUES(“edmanuser”, “edmanuser@example.com”);
+INSERT INTO edmanTable ( username, email) VALUES(“edmanuser”, “edmanuser@example.com”);
 
 -- 5-) Diferentes Manera de Ver Los datos en la tabla
   SELECT * FROM edmanTable;
@@ -31,7 +30,7 @@
 
 -- 8-) Modificar los datos con ID
   UPDATE edmanTable SET username=”newuser” WHERE id=”2”
-  UPDATE edmanTable SET username=”newuser” WHERE id=2
+  UPDATE edmanTable SET estudiante=”newuser”  email=”newuser” WHERE id=2
 
 -- 9-) Eliminar las tabla
   DELETE TABLE edmanTable;
@@ -43,8 +42,10 @@
 
 ---------------------------------------------------------------------------------------------
 -- LOS VIEW en SQL
+CREATE DATABASE practicaView;
 
 -- 1-) Crear dos tabla
+
 CREATE TABLE edmanTable (cantidad INT, precio INT);
 
 -- 2-) Insertar datos en la tabla
@@ -62,7 +63,7 @@ DELETE edmanView;
 
 ---------------------------------------------------------------------------------------------
 -- LOS TRIGGER en SQL
--- !!!  HAY QUE CREAR DOS TABLAS ANTES DE CREAR  EL TRIGGER !!! 
+  CREATE DATABASE practicaTriggers;
 
 -- 1-) Crear una tabla (1)
   CREATE TABLE empleado (
