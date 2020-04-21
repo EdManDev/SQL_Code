@@ -33,7 +33,7 @@ INSERT INTO edmanTable ( username, email) VALUES(“edmanuser”, “edmanuser@e
   UPDATE edmanTable SET estudiante=”newuser”  email=”newuser” WHERE id=2
 
 -- 9-) Eliminar las tabla
-  DELETE TABLE edmanTable;
+  DROP TABLE edmanTable;
 
 -- 10-) Eliminar las Bases de Datos
   DROP DATABASE edmanDB;
@@ -63,7 +63,7 @@ DELETE edmanView;
 
 ---------------------------------------------------------------------------------------------
 -- LOS TRIGGER en SQL
-  CREATE DATABASE practicaTriggers;
+  CREATE DATABASE edmanDB;
 
 -- 1-) Crear una tabla (1)
   CREATE TABLE empleado (
@@ -78,14 +78,15 @@ DELETE edmanView;
     ape_emp2 varchar(100),
     fechas_am date);
 
+-- 2-) SHOW TABLES////////////////
+
 -- 3-) Crear el Triger
   CREATE TRIGGER nuevo_empleado AFTER INSERT ON empleado 
     FOR EACH ROW 
-    INSERT INTO  
-    empleado_cop (cod_edman2, nom_emp2, ape_emp2, fechas_am) VALUE (new.cod_edman, new.nom_emp, new.ape_emp, now());
+    INSERT INTO empleado_cop (cod_edman2, nom_emp2, ape_emp2, fechas_am) VALUE (new.cod_edman, new.nom_emp, new.ape_emp, now());
 
 -- 4-) INSERT dentro la tabla "empleado"
-  INSERT INTO empleado (cod_edman, nom_emp, ape_emp)VALUES("edman", "manigat");
+  INSERT INTO empleado (nom_emp, ape_emp) VALUES ("edman", "manigat");
 
 -- 4-) INSERT dentro la tabla "empleado"
-  SELECT * FROM empleado;
+  -- SELECT * FROM empleado;
