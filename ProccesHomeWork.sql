@@ -89,4 +89,4 @@ DELETE edmanView;
   INSERT INTO empleado (nom_emp, ape_emp) VALUES ("edman", "manigat");
 
 -- 4-) INSERT dentro la tabla "empleado"
-  -- SELECT * FROM empleado;
+  SELECT * FROM empleado;
