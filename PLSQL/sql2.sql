@@ -93,48 +93,46 @@ INSERT INTO countries VALUES ( 'BE', 'Belgium', 1);
 
 REM ***************************insert data into the LOCATIONS table
 
-Prompt ******  Populating LOCATIONS table ....
-
-INSERT INTO locations VALUES  ( 1000, '1297 Via Cola di Rie',                          '00989'        , 'Roma'        , NULL        , 'IT'        );
-INSERT INTO locations VALUES  ( 1100, '93091 Calle della Testa',                          '10934'        , 'Venice'        , NULL        , 'IT'        );
-INSERT INTO locations VALUES  ( 1200, '2017 Shinjuku-ku',                          '1689'        , 'Tokyo'        , 'Tokyo Prefecture'        , 'JP'        );
-INSERT INTO locations VALUES  ( 1300, '9450 Kamiya-cho',                          '6823'        , 'Hiroshima'        , NULL        , 'JP'        );
-INSERT INTO locations VALUES  ( 1400, '2014 Jabberwocky Rd',                          '26192'        , 'Southlake'        , 'Texas'        , 'US'        );
-INSERT INTO locations VALUES  ( 1500, '2011 Interiors Blvd',                          '99236'        , 'South San Francisco'        , 'California'        , 'US'        );
-INSERT INTO locations VALUES  ( 1600, '2007 Zagora St',                          '50090'        , 'South Brunswick'        , 'New Jersey'        , 'US'        );
-INSERT INTO locations VALUES  ( 1700, '2004 Charade Rd',                          '98199'        , 'Seattle'        , 'Washington'        , 'US'        );
-INSERT INTO locations VALUES  ( 1800, '147 Spadina Ave',                          'M5V 2L7'        , 'Toronto'        , 'Ontario'        , 'CA'        );
-INSERT INTO locations VALUES  ( 1900, '6092 Boxwood St',                          'YSW 9T2'        , 'Whitehorse'        , 'Yukon'        , 'CA'        );
-INSERT INTO locations VALUES  ( 2000, '40-5-12 Laogianggen',                          '190518'        , 'Beijing'        , NULL        , 'CN'        );
-INSERT INTO locations VALUES  ( 2100, '1298 Vileparle (E)',                          '490231'        , 'Bombay'        , 'Maharashtra'        , 'IN'        );
-INSERT INTO locations VALUES  ( 2200, '12-98 Victoria Street',                          '2901'        , 'Sydney'        , 'New South Wales'        , 'AU'        );
-INSERT INTO locations VALUES  ( 2300, '198 Clementi North',                          '540198'        , 'Singapore'        , NULL        , 'SG'        );
-INSERT INTO locations VALUES  ( 2400, '8204 Arthur St',                          NULL        , 'London'        , NULL        , 'UK'        );
-INSERT INTO locations VALUES  ( 2500, 'Magdalen Centre, The Oxford Science Park'        , 'OX9 9ZB'        , 'Oxford'        , 'Oxford'        , 'UK'        );
-INSERT INTO locations VALUES  ( 2600, '9702 Chester Road',                          '09629850293'        , 'Stretford'        , 'Manchester'        , 'UK'        );
-INSERT INTO locations VALUES  ( 2700, 'Schwanthalerstr. 7031',                          '80925'        , 'Munich'        , 'Bavaria'        , 'DE'        );
-INSERT INTO locations VALUES  ( 2800, 'Rua Frei Caneca 1360 ',                          '01307-002'        , 'Sao Paulo'        , 'Sao Paulo'        , 'BR'        );
-INSERT INTO locations VALUES  ( 2900, '20 Rue des Corps-Saints',                          '1730'        , 'Geneva'        , 'Geneve'        , 'CH'        );
-INSERT INTO locations VALUES  ( 3000, 'Murtenstrasse 921',                          '3095'        , 'Bern'        , 'BE'        , 'CH'        );
-INSERT INTO locations VALUES  ( 3100, 'Pieter Breughelstraat 837',                          '3029SK'        , 'Utrecht'        , 'Utrecht'        , 'NL'        );
-INSERT INTO locations VALUES  ( 3200, 'Mariano Escobedo 9991',                          '11932'        , 'Mexico City'        , 'Distrito Federal,'        , 'MX'        );
+INSERT INTO locations VALUES  ( 1000, '1297 Via Cola di Rie','00989', 'Roma', NULL, 'IT');
+INSERT INTO locations VALUES  ( 1100, '93091 Calle della Testa','10934', 'Venice', NULL, 'IT');
+INSERT INTO locations VALUES  ( 1200, '2017 Shinjuku-ku','1689', 'Tokyo', 'Tokyo Prefecture', 'JP');
+INSERT INTO locations VALUES  ( 1300, '9450 Kamiya-cho','6823', 'Hiroshima', NULL, 'JP');
+INSERT INTO locations VALUES  ( 1400, '2014 Jabberwocky Rd','26192', 'Southlake', 'Texas', 'US');
+INSERT INTO locations VALUES  ( 1500, '2011 Interiors Blvd','99236', 'South San Francisco', 'California', 'US');
+INSERT INTO locations VALUES  ( 1600, '2007 Zagora St','50090', 'South Brunswick', 'New Jersey', 'US');
+INSERT INTO locations VALUES  ( 1700, '2004 Charade Rd','98199', 'Seattle', 'Washington', 'US');
+INSERT INTO locations VALUES  ( 1800, '147 Spadina Ave','M5V 2L7', 'Toronto', 'Ontario', 'CA');
+INSERT INTO locations VALUES  ( 1900, '6092 Boxwood St','YSW 9T2', 'Whitehorse', 'Yukon', 'CA');
+INSERT INTO locations VALUES  ( 2000, '40-5-12 Laogianggen','190518', 'Beijing', NULL, 'CN');
+INSERT INTO locations VALUES  ( 2100, '1298 Vileparle (E)','490231', 'Bombay', 'Maharashtra', 'IN');
+INSERT INTO locations VALUES  ( 2200, '12-98 Victoria Street','2901', 'Sydney', 'New South Wales', 'AU');
+INSERT INTO locations VALUES  ( 2300, '198 Clementi North','540198', 'Singapore', NULL, 'SG');
+INSERT INTO locations VALUES  ( 2400, '8204 Arthur St',NULL, 'London', NULL, 'UK');
+INSERT INTO locations VALUES  ( 2500, 'Magdalen Centre, The Oxford Science Park', 'OX9 9ZB', 'Oxford', 'Oxford', 'UK');
+INSERT INTO locations VALUES  ( 2600, '9702 Chester Road','09629850293', 'Stretford', 'Manchester', 'UK');
+INSERT INTO locations VALUES  ( 2700, 'Schwanthalerstr. 7031', '80925', 'Munich', 'Bavaria', 'DE');
+INSERT INTO locations VALUES  ( 2800, 'Rua Frei Caneca 1360 ', '01307-002', 'Sao Paulo', 'Sao Paulo', 'BR');
+INSERT INTO locations VALUES  ( 2900, '20 Rue des Corps-Saints', '1730', 'Geneva', 'Geneve', 'CH');
+INSERT INTO locations VALUES  ( 3000, 'Murtenstrasse 921', '3095', 'Bern', 'BE', 'CH');
+INSERT INTO locations VALUES  ( 3100, 'Pieter Breughelstraat 837', '3029SK', 'Utrecht', 'Utrecht', 'NL');
+INSERT INTO locations VALUES  ( 3200, 'Mariano Escobedo 9991', '11932', 'Mexico City', 'Distrito Federal,', 'MX');
 
 
 REM ****************************insert data into the DEPARTMENTS table
 
-INSERT INTO departments VALUES ( 10, 'Administration'        , 200        , 1700        );
-INSERT INTO departments VALUES ( 20, 'Marketing'        , 201        , 1800        );                                
-INSERT INTO departments VALUES ( 30, 'Purchasing'        , 114        , 1700	);                
-INSERT INTO departments VALUES ( 40, 'Human Resources'        , 203        , 2400        );
-INSERT INTO departments VALUES ( 50, 'Shipping'        , 121        , 1500        );                
-INSERT INTO departments VALUES ( 60, 'IT'        , 103        , 1400        );                
-INSERT INTO departments VALUES ( 70, 'Public Relations'        , 204        , 2700        );                
-INSERT INTO departments VALUES ( 80, 'Sales'        , 145        , 2500        );                
-INSERT INTO departments VALUES ( 90, 'Executive'        , 100        , 1700        );
-INSERT INTO departments VALUES ( 100, 'Finance'        , 108        , 1700        );                
-INSERT INTO departments VALUES ( 110, 'Accounting'        , 205        , 1700        );
-INSERT INTO departments VALUES ( 120, 'Treasury'        , NULL        , 1700        );
-INSERT INTO departments VALUES ( 130, 'Corporate Tax'        , NULL        , 1700        );
+INSERT INTO departments VALUES ( 10, 'Administration', 200, 1700);
+INSERT INTO departments VALUES ( 20, 'Marketing', 201, 1800);
+INSERT INTO departments VALUES ( 30, 'Purchasing', 114, 1700	);
+INSERT INTO departments VALUES ( 40, 'Human Resources', 203, 2400);
+INSERT INTO departments VALUES ( 50, 'Shipping', 121, 1500);
+INSERT INTO departments VALUES ( 60, 'IT', 103, 1400);
+INSERT INTO departments VALUES ( 70, 'Public Relations', 204, 2700);
+INSERT INTO departments VALUES ( 80, 'Sales', 145, 2500);
+INSERT INTO departments VALUES ( 90, 'Executive', 100, 1700);
+INSERT INTO departments VALUES ( 100, 'Finance', 108, 1700);
+INSERT INTO departments VALUES ( 110, 'Accounting', 205, 1700);
+INSERT INTO departments VALUES ( 120, 'Treasury', NULL, 1700);
+INSERT INTO departments VALUES ( 130, 'Corporate Tax', NULL, 1700);
 INSERT INTO departments VALUES ( 140, 'Control And Credit', NULL, 1700);
 INSERT INTO departments VALUES ( 150, 'Shareholder Services', NULL, 1700);
 INSERT INTO departments VALUES ( 160, 'Benefits', NULL, 1700);
@@ -686,87 +684,13 @@ INSERT INTO employees VALUES ( 100        , 'Steven'
         );
 
 REM ********* insert data into the JOB_HISTORY table
-
-INSERT INTO job_history
-VALUES (102
-       , TO_DATE('13-01-2001', 'dd-MM-yyyy')
-       , TO_DATE('24-07-2006', 'dd-MM-yyyy')
-       , 'IT_PROG'
-       , 60);
-
-INSERT INTO job_history
-VALUES (101
-       , TO_DATE('21-09-1997', 'dd-MM-yyyy')
-       , TO_DATE('27-10-2001', 'dd-MM-yyyy')
-       , 'AC_ACCOUNT'
-       , 110);
-
-INSERT INTO job_history
-VALUES (101
-       , TO_DATE('28-10-2001', 'dd-MM-yyyy')
-       , TO_DATE('15-03-2005', 'dd-MM-yyyy')
-       , 'AC_MGR'
-       , 110);
-
-INSERT INTO job_history
-VALUES (201
-       , TO_DATE('17-02-2004', 'dd-MM-yyyy')
-       , TO_DATE('19-12-2007', 'dd-MM-yyyy')
-       , 'MK_REP'
-       , 20);
-
-INSERT INTO job_history
-VALUES  (114
-        , TO_DATE('24-03-2006', 'dd-MM-yyyy')
-        , TO_DATE('31-12-2007', 'dd-MM-yyyy')
-        , 'ST_CLERK'
-        , 50
-        );
-
-INSERT INTO job_history
-VALUES  (122
-        , TO_DATE('01-01-2007', 'dd-MM-yyyy')
-        , TO_DATE('31-12-2007', 'dd-MM-yyyy')
-        , 'ST_CLERK'
-        , 50
-        );
-
-INSERT INTO job_history
-VALUES  (200
-        , TO_DATE('17-09-1995', 'dd-MM-yyyy')
-        , TO_DATE('17-06-2001', 'dd-MM-yyyy')
-        , 'AD_ASST'
-        , 90
-        );
-
-INSERT INTO job_history
-VALUES  (176
-        , TO_DATE('24-03-2006', 'dd-MM-yyyy')
-        , TO_DATE('31-12-2006', 'dd-MM-yyyy')
-        , 'SA_REP'
-        , 80
-        );
-
-INSERT INTO job_history
-VALUES  (176
-        , TO_DATE('01-01-2007', 'dd-MM-yyyy')
-        , TO_DATE('31-12-2007', 'dd-MM-yyyy')
-        , 'SA_MAN'
-        , 80
-        );
-
-INSERT INTO job_history
-VALUES  (200
-        , TO_DATE('01-07-2002', 'dd-MM-yyyy')
-        , TO_DATE('31-12-2006', 'dd-MM-yyyy')
-        , 'AC_ACCOUNT'
-        , 90
-        );
-
-REM enable integrity constraint to DEPARTMENTS
-
-ALTER TABLE departments 
-  ENABLE CONSTRAINT dept_mgr_fk;
-
-COMMIT;
-
+INSERT INTO job_history VALUES (102, TO_DATE('13-01-2001', 'dd-MM-yyyy'), TO_DATE('24-07-2006', 'dd-MM-yyyy'), 'IT_PROG', 60);
+INSERT INTO job_history VALUES (101, TO_DATE('21-09-1997', 'dd-MM-yyyy'), TO_DATE('27-10-2001', 'dd-MM-yyyy'), 'AC_ACCOUNT', 110);
+INSERT INTO job_history VALUES (101, TO_DATE('28-10-2001', 'dd-MM-yyyy'), TO_DATE('15-03-2005', 'dd-MM-yyyy'), 'AC_MGR', 110);
+INSERT INTO job_history VALUES (201, TO_DATE('17-02-2004', 'dd-MM-yyyy'), TO_DATE('19-12-2007', 'dd-MM-yyyy'), 'MK_REP', 20);
+INSERT INTO job_history VALUES  (114 , TO_DATE('24-03-2006', 'dd-MM-yyyy') , TO_DATE('31-12-2007', 'dd-MM-yyyy') , 'ST_CLERK' , 50 );
+INSERT INTO job_history VALUES  (122 , TO_DATE('01-01-2007', 'dd-MM-yyyy') , TO_DATE('31-12-2007', 'dd-MM-yyyy') , 'ST_CLERK' , 50 );
+INSERT INTO job_history VALUES  (200 , TO_DATE('17-09-1995', 'dd-MM-yyyy') , TO_DATE('17-06-2001', 'dd-MM-yyyy') , 'AD_ASST' , 90 );
+INSERT INTO job_history VALUES  (176 , TO_DATE('24-03-2006', 'dd-MM-yyyy') , TO_DATE('31-12-2006', 'dd-MM-yyyy') , 'SA_REP' , 80 );
+INSERT INTO job_history VALUES  (176 , TO_DATE('01-01-2007', 'dd-MM-yyyy') , TO_DATE('31-12-2007', 'dd-MM-yyyy') , 'SA_MAN' , 80 );
+INSERT INTO job_history VALUES  (200 , TO_DATE('01-07-2002', 'dd-MM-yyyy') , TO_DATE('31-12-2006', 'dd-MM-yyyy') , 'AC_ACCOUNT' , 90 );
