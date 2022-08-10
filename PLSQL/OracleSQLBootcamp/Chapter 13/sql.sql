@@ -1,0 +1,38 @@
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 13 practice 1 for chapter 13 lesson 1,2
+-- 1. Query the USER_OBJECTS data dictionary view to see information about the objects
+-- that you own.
+-- 2. Query the ALL_OBJECTS data dictionary view to see information about the objects that
+-- you can access
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 13 practice 2 for chapter 13 lesson 3
+-- 1. Query the USER_TABLES data dictionary view to see information about the tables that
+-- you own.
+-- 2. Query the ALL_TABLES data dictionary view to see information about the tables that
+-- you can access
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 13 practice 3 for chapter 13 lesson 4
+-- 1. Query the USER_TAB_COLUMNS data dictionary view to see information about the
+-- columns of all tables that you own, filter the output for EMPLOYEES table
+-- 2. Edit the previous practice that prompt the user to enter a table name, test for table
+-- EMP_NEW
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 13 practice 4 for chapter 13 lesson 5
+-- 1. Write a query to view all constraints (table name, constraint name, constraint type,
+-- status) created on a table EMP_NEW
+-- 2. Write a query to view all constraints (table name, column name, constraint name,
+-- constraint type, status) created on a table EMP_NEW
+-- 3. Edit the previous practice that prompt the user to enter a table name, test for table
+-- DEPT_NEW
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 13 practice 5 for chapter 13 lesson 6
+-- 1. Add a comment to the EMP_NEW table. Then query the USER_TAB_COMMENTS
+-- view to verify that the comment is present
+-- 2. Add a comment to the emp_name column in EMP_NEW table then query
+-- USER_COL_COMMENTS to verify that the comment is present
+--------------------------------------------------------------------------------------------------------

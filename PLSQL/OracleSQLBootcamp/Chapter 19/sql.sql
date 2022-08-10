@@ -1,0 +1,29 @@
+--------------------------------------------------------------------------------------------------------
+--------------------------------- Using Subqueries Part II
+--------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
+-- Chapter 19 practice 1 for chapter 19 lesson 1
+-- 1. Write a query to display the last name, hire date, and salary, manager number for all
+-- employees who have the same salary and manager_ID as employee named “Matos”.
+-- 2. Write a query to display the last name, salary, and hire date of any employee whose
+-- department number and salary match the department number and salary of any
+-- employee who earns a commission
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 19 practice 2 for chapter 19 lesson 2
+-- 1. Write a query to display the last name, salary, department ID of all employees who earn
+-- more than the average salary in their departments.
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 19 practice 3 for chapter 19 lesson 3
+-- 1. Write a query to display a list of departments (department ID, department name,
+-- manager_ID) for all departments that do not have any employee
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 19 practice 4 for chapter 19 lesson 4
+-- 1. Write a query to display the department names of those departments whose sum salary
+-- is above one-twenty (1/20) of the total salary of the whole employees table. Use the
+-- WITH clause to write this query. Name the query SUMMARY
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------

@@ -1,0 +1,37 @@
+--------------------------------------------------------------------------------------------------------
+--------------------------------- Controlling User Access
+--------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
+-- Chapter 21 practice 1 for chapter 21 lesson 1,2
+-- 1. As system user:
+-- a) Create two users test_user1 and test_user2
+-- b) Grant create view, create table to test_user1 with admin option
+-- 2. Try to connect as test_user1, what you observed?
+-- 3. As system user grant create session to test_user1 with admin option and try to connect
+-- again.
+-- 4. Try to create a sequence, what you observed?
+-- 5. Try to create a table, what you observed?
+-- 6. As test_user1 try to grant create session and create table to test_user2, what you
+-- observed?
+-- 7. As test_user2 connect to the database and try to create a table
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 21 practice 2 for chapter 21 lesson 3
+-- 1. As test_user1 try to select from hr.departments table? What you observed?
+-- 2. AS HR user and grant select on table departments to test_user1 with grant option?
+-- What you observed?
+-- 3. As test_user1 try to select from hr.departments, what you observed?
+-- 4. As test_user2 try to select from hr.departments table, what you observed?
+-- 5. As test_user1 grant select on hr.departments table to test_user2
+-- 6. As test_user2 try to select from hr.departments table, what you observed?
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 21 practice 3 for chapter 21 lesson 4
+-- 1. As system user:
+-- a) create a role mgr_role
+-- b) Grant select on hr.employees to mgr_role
+-- c) Grant create sequence to mgr_role
+-- d) Grant the role mgr_role to test_user1
+-- 2. As test_user1, try to select from hr.employees, what you observed?
+-- 3. As test_user1 try to create a sequence, what you observed?

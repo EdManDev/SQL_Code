@@ -1,0 +1,29 @@
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 11 practice 1 for chapter 11 lesson 4
+-- 1. Create a table my_emp as follows:
+-- Create table my_emp
+-- (empid number, name varchar2(50), salary number, hiredate date)
+-- 2. Run an INSERT statement to add the following row of data to the my_emp table:
+-- 1 ‘John’ 2000 ‘01-Feb-2018’
+-- Do not list the columns in the INSERT clause
+-- 3. Run an INSERT statement to add the following row of data to the my_emp table:
+-- 2 ‘Sam’ 3000 ‘23-Nov-2020’
+-- list the columns in the INSERT clause
+-- 4. Check the inserted data by selecting from the table
+-- 5. Open a new oracle sql developer session (CTRL+SHIT+N) and try to select the inserted
+-- data? What you noticed?
+-- 6. Make the data permanent, and check the data from the second session, what you
+-- noticed
+-- 7. Update employee number 1 and increase the salary by 500, make the changes
+-- permanent
+-- 8. Run an INSERT statement to add the following row of data to the my_emp table:
+-- 3 ‘Tom’ 5000 system date
+-- 10. Create a savepoint and name it before_delete
+-- 9. Delete all rows from the table my_emp
+-- 10. Check all rows if deleted
+-- 11. Rollback to the savepoint and make sure the inserted row is still intact
+-- 12. Commit the changes
+-- 13. Use truncate command to empty the table, try to use rollback, what you noticed?
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------

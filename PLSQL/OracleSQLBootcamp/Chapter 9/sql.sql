@@ -1,0 +1,19 @@
+--------------------------------------------------------------------------------------------------------
+-- Chapter 9 practice 1 for chapter 9 lesson 1,2
+-- 1. Write a query to display employee last name, hire date, department ID for all employees
+-- who were hired after the employee name ‘Lee’
+-- 2. Write a query to display employee last name, salary, department name for all
+-- employees who earn more than or equal the average salary. Order the output by salary
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 9 practice 2 for chapter 9 lesson 3
+-- 1. Write a query to display the employee last name, salary, email of all employees who
+-- work in a department with any employee whose last name starts with a letter “J”
+-- 2. Write a query to display a list of all employees whose salary is more than the salary of
+-- any employee from department number 110
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 9 practice 3 for chapter 9 lesson 4
+-- 1. Write a query to display the last name , job ID and the department ID of all employees
+-- whose job id and department id is the same as the employee name =‘Lee’ 
+--------------------------------------------------------------------------------------------------------

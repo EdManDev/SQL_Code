@@ -1,0 +1,33 @@
+--------------------------------------------------------------------------------------------------------
+--------------------------------- Managing Data in Different Time Zones
+--------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
+-- Chapter 23 practice 1 for chapter 23 lesson 1
+-- 1. Write a query to display the session time zone and the database time zone
+-- 2. Alter the session to set the TIME_ZONE parameter value to the time zone offset of ‘-7:00’
+-- 3. Change the session NLS_DATE_FORMAT to DD-MON-YYYY HH24:MI:SS
+-- 4. Write a query to display the session time zone and the database time zone
+-- 5. Write a query to display SYSDATE, CURRENT_DATE, what do you observe?
+-- 6. Write a query to display SYSTIMESTAMP, CURRENT_TIMESTAMP and
+-- LOCALTIMESTAMP, what do you observe?
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 23 practice 2 for chapter 23 lesson 2
+-- 1. Create a table test_table with three column id number, ym_period INTERVAL YEAR TO
+-- MONTH, ds_period INTERVAL DAY TO SECOND
+-- 2. Populate the table with test records
+-- 3. Commit the changes
+-- 4. Query the table and check the output
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 23 practice 3 for chapter 23 lesson 3
+-- 1. Write a query to display the last_name, salary, hire_date of all employees who were
+-- hired in 2003
+-- 2. Write queries to display the time zone offsets (TZ_OFFSET) for the following time
+-- zones.
+-- 1. Europe/London
+-- 2. Europe/Paris
+-- 3. Egypt
+-- 4. Singapore
+--------------------------------------------------------------------------------------------------------

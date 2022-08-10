@@ -1,0 +1,15 @@
+--------------------------------------------------------------------------------------------------------
+--------------------------------- Manipulating Data Using Subqueries
+--------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
+-- Chapter 20 practice 1 for chapter 20 lesson 1
+-- 1. Create a table called my_loc with location_id, city , country_id based on the locations
+-- table
+-- 2. Alter table my_loc add new column called country_name varchar2(100)
+-- 3. Verify the table data
+-- 4. Use correlated update statement to update the country_name column with correct
+-- country name
+-- 5. Commit the data and verify the data
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------

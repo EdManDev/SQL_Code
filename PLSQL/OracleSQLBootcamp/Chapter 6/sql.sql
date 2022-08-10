@@ -1,0 +1,38 @@
+--------------------------------------------------------------------------------------------------------
+-- Chapter 6 practice 1 for chapter 6 lesson 1,2
+-- 1. Write a query to display the last name, salary , hire date, and hire date added by 4 months
+-- for all employees working in department number 100, format the dates to appear in a
+-- format that is similar to “Sunday , the Thirty-First of May, 2003.”
+-- 2. Write a query to display the following for each employee working in department 90:
+-- <employee last name> earns <salary> monthly but wants <3 times salary.>, as in the
+-- following format:
+-- Matos earns $2,600.00 monthly but wants $7,800.00
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 6 practice 2 for chapter 6 lesson 3
+-- 1. Write a query to display the output of arithmetic operation '$5,200.3'+500
+-- 2. Write a query to display the last name, salary, hire date of all employees were hired
+-- between 01-02-2004 and 31-03-2004
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 6 practice 3 for chapter 6 lesson 4
+-- 1. Write a query to display department name, department number and manager number
+-- for all departments located in location 1700. If a department has a manager show “Has
+-- Manager” otherwise show “No Manager.” Label the column MANAGER use NVL2
+-- function
+-- 2. Write a query that displays employee’s last name, salary, commission amount for all
+-- employees working in department number (110,80). If an employee does not earn
+-- commission, show “No Commission.” Label the column COMMISSION use NVL
+-- function
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 6 practice 4 for chapter 6 lesson 5
+-- 1. Using CASE write a query to display the employee last name, job_id, grade of all
+-- employees based on the value of the JOB_ID column, using the following data:
+-- Job Grade
+-- AD_PRES A
+-- IT_PROG B
+-- SA_REP C
+-- None of the above 0
+-- 2. Rewrite the above practice using DECODE function
+--------------------------------------------------------------------------------------------------------

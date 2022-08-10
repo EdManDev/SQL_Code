@@ -1,0 +1,13 @@
+--------------------------------------------------------------------------------------------------------
+-- Chapter 10 practice 1 for chapter 10 lesson 1,2
+-- 1. Write a query to display a list of jobs for departments 10, 20, 90. Display job ID and
+-- department ID using the set operators
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Chapter 10 practice 2 for chapter 10 lesson 3
+-- 1. Write a query to display a list of locations (location ID, city, address) that have no
+-- departments located in them. use the set operators to create the query.
+-- 2. Write a query to display a list of employees (employee IDs and job IDs) of those
+-- employees who currently have a job that is the same as their previous one (they
+-- changed their job but now they are doing the same job they did previously).
+--------------------------------------------------------------------------------------------------------
