@@ -1,4 +1,8 @@
 --------------------------------------------------------------------------------------------------------
+--------------------------------- Single Row Functions
+--------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
 -- Chapter 5 practice 1 for chapter 5 lesson 1,2
 -- 1. Write a query that displays the last name (with all letters in uppercase) and the 
 -- department number for all employees whose name starts with the letters “A” Give each 

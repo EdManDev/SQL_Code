@@ -1,4 +1,8 @@
 --------------------------------------------------------------------------------------------------------
+--------------------------------- Group Functions
+--------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
 -- Chapter 7 practice 1 for chapter 7 lesson 1
 -- 1. Write a query to display the highest, lowest, sum, and average salary of all employees
 -- working on department number 100. Give an appropriate label for each column and

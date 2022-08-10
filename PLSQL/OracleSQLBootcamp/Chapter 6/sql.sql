@@ -1,4 +1,8 @@
 --------------------------------------------------------------------------------------------------------
+--------------------------------- Conversion and General Functions
+--------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
 -- Chapter 6 practice 1 for chapter 6 lesson 1,2
 -- 1. Write a query to display the last name, salary , hire date, and hire date added by 4 months
 -- for all employees working in department number 100, format the dates to appear in a
