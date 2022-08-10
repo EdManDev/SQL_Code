@@ -52,6 +52,14 @@ ORDER BY 3 desc
 -- replacing the first two characters with ‘**’, give each column an appropriate column 
 -- alias
 
+SELECT
+  country_id,
+  country_name,
+  replace(country_name, substr(country_name,1,2),'**') "New Country"
+FROM
+  countries;
+  
+------------------ ?
 SELECT 
   last_name,
   LPAD (last_name, 10,'*') "LPAD",
@@ -62,9 +70,9 @@ FROM
   employees
 WHERE 
   department_id>=110;
+------------------ ?
 
 --------------------------------------------------------------------------------------------------------
-
 
 --------------------------------------------------------------------------------------------------------
 -- Chapter 5 practice 3 for chapter 5 lesson 4
@@ -77,7 +85,6 @@ WHERE
 -- than or equal to 34.7
 
 --------------------------------------------------------------------------------------------------------
-
 
 --------------------------------------------------------------------------------------------------------
 -- Chapter 5 practice 4 for chapter 5 lesson 5
