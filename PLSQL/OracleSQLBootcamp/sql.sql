@@ -1,7 +1,8 @@
 ----------------------------------------------------------- regions
 
 CREATE TABLE regions (
-
+  regions_id NUMBER(3),
+  regions_name VARCHAR2(40),
 ); 
 
 ----------------------------------------------------------- countries
