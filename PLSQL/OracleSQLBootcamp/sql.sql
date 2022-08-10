@@ -16,7 +16,12 @@ CREATE TABLE countries (
 ----------------------------------------------------------- locations
 
 CREATE TABLE locations (
-
+  numbers    NUMBER(4),
+  strings  VARCHAR2(30),
+  strings  VARCHAR2(30),
+  strings  VARCHAR2(30),
+  strings  VARCHAR2(30),
+  strings  VARCHAR2(30),
 ); 
 
 ----------------------------------------------------------- departments
