@@ -7,6 +7,16 @@
 -- 1. Write a query to display the highest, lowest, sum, and average salary of all employees
 -- working on department number 100. Give an appropriate label for each column and
 -- round the values to the nearest two decimal points.
+
+select
+  round(max(salary),2) "MAX",
+  round(min(salary),2) "MIN",
+  round(sum(salary),2) "SUM",
+  round(avg(salary),2) "AVG"
+from 
+  employees
+where 
+  department_id=100
 -- 2. Write a query to find number of departments located in location 1700.
 --------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------
