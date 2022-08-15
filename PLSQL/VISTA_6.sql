@@ -71,9 +71,9 @@ SELECT DISTINCT
                   (SELECT 'X'
                      FROM PS_ACAD_PROG APG
                     WHERE     APG.EMPLID = M.EMPLID
-                          AND APG.PROG_ACTION IN ('DATA')
-                          AND APG.ACAD_CAREER = M.ACAD_CAREER
-                          AND APG.STDNT_CAR_NBR = M.STDNT_CAR_NBR)
+                     AND APG.PROG_ACTION IN ('DATA')
+                     AND APG.ACAD_CAREER = M.ACAD_CAREER
+                     AND APG.STDNT_CAR_NBR = M.STDNT_CAR_NBR)
           THEN
              'SI'
           ELSE
