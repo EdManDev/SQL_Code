@@ -18,6 +18,19 @@ from
 where 
   department_id=100
 -- 2. Write a query to find number of departments located in location 1700.
+SELECT
+  department_id
+FROM 
+  departments
+WHERE 
+  location_id=1700
+--------------------------
+SELECT
+  count(department_id)
+FROM 
+  departments
+WHERE 
+  location_id=1700
 --------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------
 -- Chapter 7 practice 2 for chapter 7 lesson 2
