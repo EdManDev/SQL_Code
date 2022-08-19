@@ -1,1 +1,1 @@
-# i remove them to a private directory
+# i remove them to a private repository
